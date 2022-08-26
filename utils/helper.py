@@ -24,6 +24,6 @@ def json_parser():
     This functions reads a json file.
     :return: Returns the object of json.load
     """
-    f = open('../config/file.json')
+    f = open('./config/file.json')
     data = json.load(f)
-    return data
+    return data["file"]
